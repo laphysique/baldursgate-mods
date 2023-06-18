@@ -1,0 +1,102 @@
+@0="Guided-Missile Cruiser"
+@1="Guided-Missile Cruiser"
+@2="Guided-Missile Cruiser:
+
+Guided-Missile Cruiser, or often called Cruiser, are globetrotting mages spending their whole life pursuing the essence of the Magic Missile spell. Eventually, they have comprehend the fundamental principles underpinning the magical energy invocation, and, moreover, have surpassed the principles and obtained the ability to reshape the transmission and conjuration of the magical energy power. Their version of Magic Missiles are occult and lethal, which shall not be viewed as its origin of the simple 1st-level spell.  
+
+Advantages:
+- Hit dice: d6
+- Immune to the Magic Missile spell.
+- Gain 2 extra 1st-level spell slot at the 1st level.
+- Gain 1st-level spell Shield at the 1st level.
+- Gain 1st-level spell Guided Missile at the 1st level. 
+
+Guided Missile: The cruiser creates 1+1/2 levels magic missiles unerringly strike their target. Each missile inflicts 1d6+1 points of damage by passing all magic resistance, which is of spell level 1+1/2 levels up to the 10th level at the 19th level. The magic missiles can target invisible enemies, and is unaffected by silence and dead/wild magic. In addition, after casting Magic Guided Missile, the cruiser will be able to cast another spell without pause, and will restore a 1st-level spell after 10 rounds. The restoration time is then decreased by 1 round every 2 levels.
+
+- May use the Hawk Eye ability once per day. Gain one use at level 5 and gain an extra use at the 10th and 15th levels.
+
+Hawk Eye: The cruiser increases <PRO_HISHER> visual range to 60ft for 1 turn.
+
+- New high level skills.
+
+
+Disadvantages:
+
+- May not use and learn any Invocation spells unless granted as high-level skills.
+- May cast one fewer spell per level per day except for the 1st level spell.
+- May not learn spells and high-level skills of common mages.
+– Alignment restricted to any non-lawful."
+
+@21="Guided Missile"
+@22="Guided Missile
+(Any School)
+
+Level: 1
+Range: Visual range of the caster
+Duration: Instant
+Casting Time: 0
+Area of Effect: 1 creature
+Saving Throw: None 
+
+Use of the Guided Missile spell creates several missiles of magic energy that dart forth from the cruiser and unerringly strike their target, which must be a creature of some sort. Each missile inflicts 1d6+1 points of damage. The cruiser can shoot 2 missiles at the 1st level, and gain an extra missile every 2 levels up to 11 missiles at the 19th level. The spell level of the missiles also increases by 1 every 2 cruiser's level up to the 10th level at the 19th level. The magic missiles can target invisible enemies, and is unaffected by silence and dead/wild magic."
+
+
+@23="Hawk Eye"
+@24="Hawk Eye
+(Any School)
+
+Level: 3
+Range: 0
+Duration: 1 turn
+Casting Time: 0
+Area of Effect: visual range of the caster
+Saving Throw: None 
+
+When this spell is cast, the cruiser's visual range is doubled to 60ft for 1 turn."
+
+@25="Shield Shattering"
+@26="Shield Shattering
+(Any School)
+
+Level: 6
+Range: Visual range of the caster
+Duration: Instant
+Casting Time: 0
+Area of Effect: 1 creature
+Saving Throw: None 
+
+When this spell is cast at a creature, it lowers down the target's magic damage resistance by 10% / 5 levels up to 50% for 5 rounds. The effect can be stacked."
+
+@27="Electromagnetic Pulse"
+@28="Electromagnetic Pulse
+(Any School)
+
+Level: 7
+Range: 0
+Duration: Instant
+Casting Time: 0
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+When this spell is cast, an explosive burst of electricity and flame is delivered to an area of 15ft radius centred at the cruiser, conveying 4d6 fire and 4d6 electricity damage (by passing the targets' magic resistance). All creatures, except the cruiser <PRO_HIMHER>self, are blowed away and knocked off for 2 seconds (save vs Spell with -10 penalty), and will be blind and have a 95% of casting failure probability for 24 rounds. The victim can save vs Spell to take half damage and not suffer blindness and casting failure."
+
+@29="A.E.S.A."
+@30="A.E.S.A. is the acronym of Active Electronically Scanned Array. After comprehending the ability, the cruiser permanently increases <PRO_HISHER> visual range to 60ft. The cruiser also gain 10% electricity and fire resistance permanently. 
+
+The Hawk Eye spell will be removed from the cruiser's spell book."
+
+@31="Aegis"
+@32="Choosing this ability increases the cruiser's resistance to magic and magic damages by 5%, and grants the cruiser a bonus of 1 to AC and all Saving Throws. This ability may be learn at most 3 times. 
+
+Requires: A.E.S.A."
+
+@33="Extra Level 1 Spell"
+@34="Choosing this ability allows the cruiser to cast one additional Level 1 spell. This ability may be learn at most 3 times."
+
+@35="Next Generation Warhead"
+@36="Choosing this ability increases all magic damages the cruiser caused by 50%. 
+
+Requires: A.E.S.A."
+
+
+

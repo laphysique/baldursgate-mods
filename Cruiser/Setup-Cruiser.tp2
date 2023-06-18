@@ -1,0 +1,91 @@
+BACKUP ~Cruiser/backup~                                     // Backup directory
+AUTHOR ~caseypie1004@gmail.com~                                // Author's e-mail address
+LANGUAGE ~English~ ~eng~ ~Cruiser/Setup.tra~  // English
+
+
+BEGIN @1 
+INCLUDE ~Cruiser/fl#add_kit_ee.tpa~
+
+ADD_KIT ~CRUISER~  
+
+//clasweap.2da
+	~CRUISER  1 0 1 1 0 0 0 0~
+//weapprof.2da                                                                                
+	~CRUISER  0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  
+//abclasrq.2da
+	~CRUISER  0 0 0 12 12 9~
+//abclsmod.2da                                  
+	~CRUISER  0 0 0 0 0 0~                
+//abdcdsrq.2da                                
+	~CRUISER  0 17 0 17 0 17~
+//abdcscrq.2da                                                
+	~CRUISER  0 15 0 15 0 15~
+//alignmnt.2da                                             
+	~CRUISER  0 0 0 1 1 1 1 1 1~   
+//dualclas.2da                    
+	~CRUISER  0 0 0 0 0 0~
+//skill                                                 
+	~Cruiser/2DA/CRUISER.2DA~
+//kittable.2da                                                                                           
+	~K_M_H K_M_D K_M_G K_M_E K_M_HE K_M_HL K_M_HO~                                                             
+//kitlist
+	~0x00000200  1~
+//luabbr.2da
+	~CRU~    
+                                                                                             
+//25stwear.2da
+	~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,20 STAF20~
+
+SAY @0
+SAY @1
+SAY @2
+
+LAF fl#add_kit_ee
+    STR_VAR
+        kit_name = CRUISER
+        clswpbon = ~0 0 5~
+        hpclass = ~HPROG~
+        clsrcreq = ~1 1 1 0 0 0 0~
+        numwslot = 2
+        clascolr = ~67 25 70 94 43~
+    END
+
+
+// 2DA
+COPY ~Cruiser/2DA~ ~override~
+
+// SPL
+COPY ~Cruiser/SPL/CRUIN.SPL~ ~override~
+COPY ~Cruiser/SPL/CRU23.SPL~ ~override~
+COPY ~Cruiser/SPL/CRU45.SPL~ ~override~
+COPY ~Cruiser/SPL/CRU6.SPL~ ~override~
+COPY ~Cruiser/SPL/CRU7.SPL~ ~override~
+COPY ~Cruiser/SPL/CRU8.SPL~ ~override~
+COPY ~Cruiser/SPL/CRU9.SPL~ ~override~
+COPY ~Cruiser/SPL/CRU112a.SPL~ ~override~
+COPY ~Cruiser/SPL/CRU112.SPL~ ~override~
+	SAY NAME1 @21
+	SAY UNIDENTIFIED_DESC @22
+COPY ~Cruiser/SPL/CRUEYE.SPL~ ~override~
+	SAY NAME1 @23
+	SAY UNIDENTIFIED_DESC @24
+COPY ~Cruiser/SPL/CRURM.SPL~  ~override~
+	SAY NAME1 @25
+	SAY UNIDENTIFIED_DESC @26
+COPY ~Cruiser/SPL/CRU523D.SPL~  ~override~
+COPY ~Cruiser/SPL/CRU523.SPL~  ~override~
+	SAY NAME1 @27
+	SAY UNIDENTIFIED_DESC @28
+COPY ~Cruiser/SPL/CRUAESA.SPL~  ~override~
+	SAY NAME1 @29
+	SAY UNIDENTIFIED_DESC @30
+COPY ~Cruiser/SPL/CRUAGS.SPL~  ~override~
+	SAY NAME1 @31
+	SAY UNIDENTIFIED_DESC @32
+COPY ~Cruiser/SPL/CRUSPL1.SPL~  ~override~
+	SAY NAME1 @33
+	SAY UNIDENTIFIED_DESC @34
+COPY ~Cruiser/SPL/CRUNGW.SPL~  ~override~
+	SAY NAME1 @35
+	SAY UNIDENTIFIED_DESC @36
