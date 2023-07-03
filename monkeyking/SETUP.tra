@@ -1,0 +1,60 @@
+@0="Priest of Sun Wukong"
+@1="Priest of Sun Wukong"
+@2="Priest of Sun Wukong:
+Sun Wukong, also known as The Great Sage Heaven's Equal, and the Victorious Fighting Buddha, is a god of freedom and adventure. His clerics are dedicated to the eternal expedition of fighting against evil.
+
+Advantages:
+– +1 bonus to melee hit roll every 5 levels.
+- May achieve Grand Mastery (5 slots) in quarterstaff with additional bonus:
+  2 slots: extra 0.5 attack
+  3 slots: extra 1 attack
+  4 slots: extra 1.5 attack
+  5 slots: extra 2 attack and will never critical miss when attacking with staves.
+- May cast the Dispel Strike ability once per day. Gains one use at level 7 and an additional use at  levels l3, 19, and 25.
+
+Dispel Strike: During the next 6 seconds, the Priest of Sun Wukong's melee attacks cast Dispel Magic (twice of priest level) on hit toward <PRO_HISHER> opponents.
+
+- Six arcane spells are added to <PRO_HISHER> repertoire, all the way up to the 6th level. These are listed below:
+  1st level: Find Familiar.
+  2nd level: Mirror Image.
+  3rd level: Wraithform.
+  4th level: Stoneskin.
+  5th level: Spell Immunity.
+  6th level: Mislead.
+- May learn some fighter's high level abilities as high level divine spells.
+
+Disadvantages:
+– Race restricted to dwarf, halfling, and gnome. 
+- Alignment restricted to any non-evil and non-lawful.
+- May cast two fewer spells per level per day
+- May turned undead at two levels lower than a normal cleric.
+– May not achieve any proficiency in missile weapons.
+- May not learn some normal high level divine spell."
+
+@11="Holy Symbol of Sun Wukong"
+@12="Only the most worthy and devoted servants of the Victorious Fighting Buddha are granted these powerful holy symbols. 
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: +1
+– Magic Resistance: +5%
+– 1 extra attack per round
+
+Usable by: Priest of Sun Wukong
+
+Weight: 0"
+
+@13="Only a Priest of Sun Wukong may wear this ring."
+
+@21="Dispel Strike"
+@22="You can use the Dispel Strike ability once more per day. During the next 6 seconds, all your melee attacks cast Dispel Magic (twice of priest level) on hit toward your opponents."
+
+@23="Extra Level 5 Spell"
+@24="Choosing this ability allows the priest to cast one additional Level 5 spell."
+
+@25="Extra Level 6 Spell"
+@26="Choosing this ability allows the priest to cast one additional Level 6 spell."
+
+@27="Extra Level 7 Spell"
+@28="Choosing this ability allows the priest to cast one additional Level 7 spell."

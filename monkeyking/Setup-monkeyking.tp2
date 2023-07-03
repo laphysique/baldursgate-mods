@@ -1,0 +1,171 @@
+BACKUP ~MONKEYKING/backup~                                       // Backup directory
+AUTHOR ~caseypie1004@gmail.com~                                // Author's e-mail address
+LANGUAGE ~English~ ~eng~ ~MONKEYKING/Setup.tra~  // English
+
+BEGIN @1 // Priest of Sun Wukong
+INCLUDE "MONKEYKING/fl#add_kit_ee.tpa"
+
+ADD_KIT ~MONKEYKING~  
+
+//clasweap.2da
+	~MONKEYKING  0 0 1 0 0 1 0 0~
+//weapprof.2da                                                                                
+	~MONKEYKING  0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 5 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~   
+//abclasrq.2da
+	~MONKEYKING  13 13 0 0 9 9~
+//abclsmod.2da                                  
+	~MONKEYKING  0 0 0 0 0 0~                
+//abdcdsrq.2da                                
+	~MONKEYKING  0 0 0 0 17 0~
+//abdcscrq.2da                                                
+	~MONKEYKING  0 0 0 0 15 0~   
+//alignmnt.2da                                             
+	~MONKEYKING  0 0 0 1 1 0 1 1 0~   
+//dualclas.2da                    
+	~MONKEYKING  1 0 1 1 0 1~
+//skill                                                 
+	~MONKEYKING/2DA/MONKEY.2DA~
+//kittable.2da                                                                                           
+	~ K_C_D K_C_G K_C_HL~                                                          
+//kitlist
+	~0x00000000  3~
+//luabbr.2da
+	~MNK~             
+                                                                                             
+//25stweap.2da
+~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+
+
+SAY @1
+SAY @0
+SAY @2
+
+LAF fl#add_kit_ee STR_VAR kit_name = ~MONKEYKING~ clswpbon = ~0 0 3~ END
+
+
+// 2DA and EFF
+COPY ~MONKEYKING/2DA~ ~override~
+COPY ~MONKEYKING/EFF~ ~override~
+COPY ~MONKEYKING/BAM~ ~override~
+COPY ~MONKEYKING/ITM/MNKSYM.ITM~ ~override~
+	SAY NAME2 @11
+	SAY DESC  @12
+ 
+// SPL
+COPY ~MONKEYKING/SPL/MNKORI.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKATK.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKMI1.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKMI2.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKMI3.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKMI4.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKMI5.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKMI6.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKMI7.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNK001.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNK002.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNK003.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNK004.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNK005.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNK006.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKAP0.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKAPR2.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKAPR3.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKAPR4.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKAPR5.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKGET.SPL~ ~override~
+COPY ~MONKEYKING/SPL/MNKDSP.SPL~ ~override~
+	SAY NAME1 @21
+	SAY UNIDENTIFIED_DESC @22
+
+// HLA 
+COPY ~MONKEYKING/SPL/MNK900.SPL~ ~override~COPY ~MONKEYKING/SPL/MNK902.SPL~ ~override~COPY ~MONKEYKING/SPL/MNK905.SPL~ ~override~COPY ~MONKEYKING/SPL/MNK906.SPL~ ~override~COPY ~MONKEYKING/SPL/MNK907.SPL~ ~override~COPY ~MONKEYKING/SPL/MNK908.SPL~ ~override~COPY ~MONKEYKING/SPL/MNK909.SPL~ ~override~
+
+COPY ~MONKEYKING/SPL/MNKADD5.SPL~ ~override~
+	SAY NAME1 @23
+	SAY UNIDENTIFIED_DESC @24
+COPY ~MONKEYKING/SPL/MNKADD6.SPL~ ~override~
+	SAY NAME1 @25
+	SAY UNIDENTIFIED_DESC @26
+COPY ~MONKEYKING/SPL/MNKADD7.SPL~ ~override~
+	SAY NAME1 @27
+	SAY UNIDENTIFIED_DESC @28
+
+// Edit stafxx.itm files for monkeyking's special grand mastery
+
+// Check KIT.IDS
+COPY_EXISTING ~kitlist.2da~ ~override~
+  COUNT_2DA_ROWS 9 rowtotal
+  FOR (i=0;i<rowtotal;i+=1) BEGIN
+    READ_2DA_ENTRY %i% 1 9 kitname 
+    PATCH_IF ("%kitname%" STRING_EQUAL "MONKEYKING")  BEGIN
+      READ_2DA_ENTRY %i% 9 9 mnkkitid
+    END  
+  END
+
+// Grand Mastery quarterstaff variables
+APPEND ~splprot.2da~ ~MNK_QUARTERSTAFF_2	102	2	1~
+APPEND ~splprot.2da~ ~MNK_QUARTERSTAFF_3	102	3	1~
+APPEND ~splprot.2da~ ~MNK_QUARTERSTAFF_4	102	4	1~
+APPEND ~splprot.2da~ ~MNK_QUARTERSTAFF_5	102	5	1~
+	
+// Check SPLPROT.IDS
+COPY_EXISTING ~splprot.2da~ ~override~
+  COUNT_2DA_ROWS 3 rowtotal  
+  FOR (i=0;i<rowtotal;i+=1) BEGIN
+    READ_2DA_ENTRY %i% 0 3 varname 
+    PATCH_IF ("%varname%" STRING_EQUAL "MNK_QUARTERSTAFF_2")  BEGIN
+      i2 = i
+    END  
+    PATCH_IF ("%varname%" STRING_EQUAL "MNK_QUARTERSTAFF_3")  BEGIN
+      i3 = i
+    END  
+    PATCH_IF ("%varname%" STRING_EQUAL "MNK_QUARTERSTAFF_4")  BEGIN
+      i4 = i
+    END  
+    PATCH_IF ("%varname%" STRING_EQUAL "MNK_QUARTERSTAFF_5")  BEGIN
+      i5 = i
+    END
+  END
+
+  i2 -= 1
+  i3 -= 1
+  i4 -= 1
+  i5 -= 1
+
+// Copy quarterstaff itm files and modify
+COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~  
+  READ_BYTE    0x31 itemtype
+  READ_ASCII   0x3a icon
+  PATCH_IF ("%itemtype%" = "102")  BEGIN    
+    LPF ADD_ITEM_EQEFFECT 
+      INT_VAR opcode = 177 target = 1 parameter1 = %mnkkitid% parameter2 = 9 timing = 2 
+      STR_VAR resource = ~MNKAPR~ 
+    END
+  END
+
+// Modify spell file
+COPY_EXISTING ~MNKAP0.SPL~ ~override~
+  LPF ADD_SPELL_EFFECT  
+    INT_VAR opcode = 326 target = 1 parameter1 = 0 parameter2 = %i2% timing = 2 
+    STR_VAR resource = ~MNKAPR2~ 
+  END
+  LPF ADD_SPELL_EFFECT  
+    INT_VAR opcode = 326 target = 1 parameter1 = 0 parameter2 = %i3% timing = 2 
+    STR_VAR resource = ~MNKAPR3~  
+  END
+  LPF ADD_SPELL_EFFECT   
+    INT_VAR opcode = 326 target = 1 parameter1 = 0 parameter2 = %i4% timing = 2 
+    STR_VAR resource = ~MNKAPR4~ 
+  END
+  LPF ADD_SPELL_EFFECT  
+    INT_VAR opcode = 326 target = 1 parameter1 = 0 parameter2 = %i5% timing = 2 
+    STR_VAR resource = ~MNKAPR5~ 
+  END
+
+
+// Restricted the ring
+COPY_EXISTING ~MNKSYM.ITM~ ~override~
+  i = RESOLVE_STR_REF ( @13 )
+  LPF ADD_ITEM_EFFECT  
+    INT_VAR opcode = 319 target = 1 parameter1 =%mnkkitid% parameter2 = 9 special=%i%
+  END
