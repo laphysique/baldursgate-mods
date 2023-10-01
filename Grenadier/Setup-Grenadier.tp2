@@ -1,0 +1,84 @@
+BACKUP ~Grenadier/backup~                                       // Backup directory
+AUTHOR ~caseypie1004@gmail.com~                                // Author's e-mail address
+LANGUAGE ~English~ ~eng~ ~Grenadier/Setup.tra~  // English
+
+BEGIN @78001 // GRNADER
+INCLUDE ~Grenadier/fl#add_kit_ee.tpa~
+
+ADD_KIT ~GRNADER~  
+
+//clasweap.2da
+	~GRNADER  1 0  1 1 0 0 0 0~
+//weapprof.2da                                                                                
+	~GRNADER  0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 2 0 0 0 0 0 0 1 0 0 0 5 1 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~   
+//abclasrq.2da
+	~GRNADER  0 0 16 17 0 15~
+ //abclsmod.2da                                  
+	~GRNADER  0 0 0 0 0 0~                
+//abdcdsrq.2da                                
+	~GRNADER  0 17 0 0 0 17~
+//abdcscrq.2da                                                
+	~GRNADER  0 15 0 0 0 15~   
+//alignmnt.2da                                             
+	~GRNADER  0 1 0 1 1 1 0 1 0~   
+//dualclas.2da                    
+	~GRNADER  0 0 0 0 0 0~
+//skill                                                 
+	~Grenadier/2DA/GRNADER.2da~
+//kittable.2da                                                                                           
+	~K_B_H K_B_HE~                                                                   
+//kitlist
+	~0x00000800  5~
+//luabbr.2da
+	~GR!HLA~                 
+                                                                                             
+//25stwear.2da
+~* SHLD24 * BAG26 RING33 RING39 CLCK27 BOOT01 * BRAC16 BELT10 * * * POTN52,5 POTN04,2 POTN14,5 * * *~
+
+SAY @78001
+SAY @78001
+SAY @78002
+
+LAF fl#add_kit_ee
+    STR_VAR
+        kit_name = GRNADER
+	thiefscl = ~100 0 0 0 0 0 0 0~
+    END
+
+//2DA & EFF
+COPY ~Grenadier/2DA~ ~override~
+COPY ~Grenadier/EFF~ ~override~
+
+//SPL
+COPY ~Grenadier/SPL/GR!BLAD.spl~ ~override/GR!BLAD.spl~
+	SAY NAME1 @78006
+	SAY UNIDENTIFIED_DESC @78007
+COPY ~Grenadier/SPL/GR!MET.spl~ ~override/GR!MET.spl~
+	SAY NAME1 @78003
+	SAY UNIDENTIFIED_DESC @78004
+COPY ~Grenadier/SPL/GR!SPLNG.spl~ ~override/GR!SPLNG.spl~
+	SAY NAME1 @78009
+	SAY UNIDENTIFIED_DESC @78010
+COPY ~Grenadier/SPL/GR!SPLNE.spl~ ~override/GR!SPLNE.spl~
+	SAY NAME1 @78011
+	SAY UNIDENTIFIED_DESC @78012
+COPY ~Grenadier/SPL/GR!MIRR.spl~ ~override/GR!MIRR.spl~
+	SAY NAME1 @78013
+	SAY UNIDENTIFIED_DESC @78014
+COPY ~Grenadier/SPL/GR!EYE.SPL~ ~override/GR!EYE.SPL~
+	SAY NAME1 @78015
+COPY ~Grenadier/SPL/GR!INI.spl~ ~override/GR!SPEED.spl~
+COPY ~Grenadier/SPL/GR!ANI.spl~ ~override/GR!ANI.spl~
+
+//ITM
+COPY ~Grenadier/ITM/GR!BLAD.itm~ ~override/GR!BLAD.itm~
+	SAY NAME1 @78006
+	SAY NAME2 @78006
+	SAY UNIDENTIFIED_DESC @78008
+	SAY IDENTIFIED_DESC @78008
+COPY ~Grenadier/ITM/GR!MET.itm~ ~override/GR!MET.itm~
+	SAY NAME1 @78003
+	SAY NAME1 @78003
+	SAY UNIDENTIFIED_DESC @78005
+	SAY IDENTIFIED_DESC @78005
+

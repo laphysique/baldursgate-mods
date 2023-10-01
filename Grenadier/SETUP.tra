@@ -1,0 +1,141 @@
+@78001="Grenadier"
+@78002="Grenadier:
+This kind of bard usually makes a living by juggling, especially good at tricks such as throwing and catching empty bottles. However, the image of the traveling buskers is actually a disguise: a group of exiles trying to hide their past as a military weapon. They were originally evocation mages in a powerful country who studied war-related skills. After exhausting their minds, they mastered the ability to condense energy beyond ordinary spells, and fought on the battlefield as a vanguard. However, the country's government intends to eliminate these terrible human weapons after the victory of the war. So this group of people and their descendants hid their amazing skills, became bards, and went into exile.
+
+Advantages:
+- +1 bonus to ranged hit roll and damage every 5 levels
+- May achieve Grand Mastery (5 slots) in darts and Specialized (2 slots) in daggers
+- +1 and +1 advantages to saving throws vs Breath Weapon and Spell, respectively.
+- +1 bonus to Cast Speed 
+- May cast the Improved Minute Meteors ability once per day. Gain one use at level 4 and an additional use every 4 levels thereafter.
+
+  Improved Minute Meteors: This spell creates 2 globes of fire per level of the grenadier (up to 40 globes at level 20), which exist for one day and can be stored as normal darts. The meteors can be hurled at targets up to 270 feet away and are treated as missiles with a +5 bonus to the attack rolls. Each meteor bursts into a 1-ft. diameter sphere upon impact, inflicting 1d4+3 points of damage plus an additional 3 points of fire damage to any creature struck. The grenadier may hurl up to five missiles per round. 
+
+- May cast the Hawk Eye ability once per day. Gain one use at level 5 and an additional use every 5 levels thereafter.
+   
+  Hawk Eye: Double Visual range (60ft) for 1 round/2 levels up to level 20.
+
+- May cast the Called Shot ability once per day. Gain one use at level 4 and an additional use every 8 levels thereafter.
+
+  Called Shot: All successful ranged attacks made by the Archer within the next 10 seconds acquire the following effects besides normal damage:
+
+ 4th level: -1 penalty to target's THAC0.
+ 8th level: -1 penalty to target's Saving Throws vs. Spell.
+ 12th level: -1 penalty to the target's Strength score.
+ 16th level: +2 bonus to damage roll.
+
+Disadvantages:
+– Only has one half the normal Lore value.
+– Only has one half the normal Pick Pockets skill.
+- May not cast and use any spells of Enchantment School
+- May not achieve Proficient (1 slot) in weapons other than darts, daggers, slings, short swords, and staves.
+- May not learn Use Any Item.
+
+Restriction:
+- Constitution greater than 16 and intelligence greater than 17."
+
+
+@78003="Improved Minute Meteors"
+@78004="Improved Minute Meteors 
+(Evocation)
+
+Level: 3
+Range: 0
+Duration: 1 day 
+Casting Time: 3
+Area of Effect: The caster
+Saving Throw: None
+
+
+This spell creates 2 globes of fire per level of the grenadier (up to 40 globes at level 20), which exist for one day and can be stored as normal darts. The meteors can be hurled at targets up to 270 feet away and are treated as missiles with a +5 bonus to the attack rolls. Each meteor bursts into a 1-ft. diameter sphere upon impact, inflicting 1d4+3 points of damage plus an additional 3 points of fire damage to any creature struck. The grenadier may hurl up to five missiles per round." 
+
+@78005="This glowing meteor was created with the spell Melf's Minute Meteors. Only Grenadiers may use it as a dart.
+
+STATISTICS:
+
+Equipped abilities:
+– Sets attacks per round to 5
+
+THAC0: +5
+Damage: 1d4+3, +3 fire damage
+Damage type: Pierce
+Speed Factor: 0
+Proficiency Type: Dart
+Type: One-handed
+
+
+Weight: 0"
+
+
+@78006="Improved Energy Blades"
+@78007="Improved Energy Blades
+(Any School)
+
+Level: 10
+Range: Special
+Duration: 4 turns
+Casting Time: 3
+Area of Effect: Special
+Saving Throw: None
+
+This spell is an outcome of the military research for Grenadiers. An energy blade is a discus made of pure energy. The disc gives +10 to THAC0, and when thrown does 1d4+5 missile damage as well as 1d10 additional electrical damage. This spell creates 40 energy discs of the caster and sets the caster's attacks to 10 as long as the discs are held."
+
+
+@78008="This disc of pure energy is made of the Improved Energy Blades spell. Only Grenadiers may use it as a dart.
+
+STATISTICS:
+
+Combat abilities: 10 attacks per round. 
+
+THAC0: +10
+Damage: 1D4+5, +1d10 electrical damage
+Damage type: Slashing
+Speed Factor: 0
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 0"
+
+@78009="Summon Planetar"
+@78010="Summon Planetar
+(Any School)
+
+Level: 10
+Range: 120 ft.
+Duration: 4 rounds + 1 round/2 level
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+This spell opens a celestial gate and calls forth a planetar to fight at the caster's side until the spell expires or the planetar's avatar is slain."
+
+
+@78011="Summon Dark Planetar"
+@78012="Summon Dark Planetar
+(Any School)
+
+Level: 10
+Range: 120 ft.
+Duration: 4 rounds + 1 round/2 level
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+This spell opens an abyssal gate and calls forth a fallen planetar to fight at the caster's side until the spell expires or the planetar's avatar is slain."
+
+@78013="Physical Mirror"
+@78014="Physical Mirror
+(Alteration)
+
+Level: 6
+Sphere: Numbers
+Range: 90 ft.
+Duration: 9 rounds
+Casting Time: 6
+Area of Effect: Special
+Saving Throw: None
+
+This spell causes a localized folding of space. The folded space takes the form of an invisible disk that protects the caster. Any missile weapon that intersects this disk is instantaneously reversed in direction. Melee factors such as speed, range, and damage are unaffected; the direction of the object or force is simply rotated through a 180-degree arc. The sender of the missile finds <PRO_HIMHER>self the target of <PRO_HISHER> own attack. The caster of the mirror may direct missile attacks normally through the space occupied by the mirror."
+
+@78015="Hawk Eye"
+
