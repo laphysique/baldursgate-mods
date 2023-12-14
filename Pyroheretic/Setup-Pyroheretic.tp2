@@ -1,0 +1,157 @@
+BACKUP ~Pyroheretic/backup~                                     // Backup directory
+AUTHOR ~caseypie1004@gmail.com~                                // Author's e-mail address
+LANGUAGE ~English~ ~eng~ ~Pyroheretic/Setup.tra~  // English
+
+
+BEGIN @1 
+INCLUDE ~Pyroheretic/fl#add_kit_ee.tpa~
+
+ADD_KIT ~PYROHER~  
+
+//clasweap.2da
+	~PYROHER  1 0 1 1 0 0 0 0~
+//weapprof.2da                                                                                
+	~PYROHER  0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~  
+//abclasrq.2da
+	~PYROHER  0 0 0 12 12 9~
+//abclsmod.2da                                  
+	~PYROHER  0 0 0 0 0 0~                
+//abdcdsrq.2da                                
+	~PYROHER  0 17 0 17 0 17~
+//abdcscrq.2da                                                
+	~PYROHER  0 15 0 15 0 15~
+//alignmnt.2da                                             
+	~PYROHER  0 0 0 1 1 1 1 1 1~   
+//dualclas.2da                    
+	~PYROHER  0 0 0 0 0 0~
+//skill                                                 
+	~Pyroheretic/2DA/PYROHER.2DA~
+//kittable.2da                                                                                           
+	~K_S_H K_S_D K_S_G K_S_E K_S_HE K_S_HL K_S_HO~                                                             
+//kitlist
+	~0x00000800 19~
+//luabbr.2da
+	~PYR~    
+                                                                                             
+//25stwear.2da
+	~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,20 STAF20~
+
+SAY @0
+SAY @1
+SAY @2
+
+LAF fl#add_kit_ee
+    STR_VAR
+        kit_name = PYROHER
+        clswpbon = ~0 0 5~
+        hpclass = ~HPROG~
+        clsrcreq = ~1 1 1 0 0 0 0~
+        numwslot = 2
+        clascolr = ~67 25 70 94 43~
+    END
+
+
+// 2DA
+COPY ~Pyroheretic/2DA~ ~override~
+
+// Block all original spells
+COPY ~Pyroheretic/SPL/PYRPRHB.SPL~ ~override~
+COPY_EXISTING_REGEXP GLOB ~.*\.spl~ ~PyrInstallTemp~
+
+ACTION_BASH_FOR ~PyrInstallTemp~ ~.*\.spl~ BEGIN
+  COPY ~PyrInstallTemp/%BASH_FOR_FILE%~ ~PyrInstallTemp~
+    true = 0 
+    READ_SHORT 0x1c spelltype  
+    PATCH_IF ("%BASH_FOR_FILE%" STRING_MATCHES_REGEXP "^PYR*") BEGIN
+      PATCH_IF ("%spelltype%" = 1)  BEGIN      
+        true = 1 
+      END
+    END
+
+  COPY_EXISTING ~PYRPRHB.SPL~ ~override~
+    PATCH_IF (%true% = 1)  BEGIN 
+      LPF ADD_SPELL_EFFECT  
+        INT_VAR 
+          opcode = 172 target = 2 parameter1 = 0 parameter2 = 0 timing = 4 duration = 1
+        STR_VAR
+          resource = EVALUATE_BUFFER ~%BASH_FOR_RES%~ RET
+      END
+  END 
+END
+
+DELETE ~PyrInstallTemp~
+
+
+// SPL
+COPY ~Pyroheretic/SPL/noname~ ~override~
+
+COPY ~Pyroheretic/SPL/PYRRM.SPL~  ~override~
+	SAY NAME1 @21
+
+COPY ~Pyroheretic/SPL/PYR103.SPL~  ~override~
+	SAY NAME1 @103
+	SAY UNIDENTIFIED_DESC @1030
+COPY ~Pyroheretic/SPL/PYR112.SPL~  ~override~
+	SAY NAME1 @112
+	SAY UNIDENTIFIED_DESC @1120
+COPY ~Pyroheretic/SPL/PYR206.SPL~  ~override~
+	SAY NAME1 @206
+	SAY UNIDENTIFIED_DESC @2060
+COPY ~Pyroheretic/SPL/PYR217.SPL~  ~override~
+	SAY NAME1 @217
+	SAY UNIDENTIFIED_DESC @2170
+COPY ~Pyroheretic/SPL/PYR303.SPL~  ~override~
+	SAY NAME1 @303
+	SAY UNIDENTIFIED_DESC @3030
+COPY ~Pyroheretic/SPL/PYR304.SPL~  ~override~
+	SAY NAME1 @304
+	SAY UNIDENTIFIED_DESC @3040
+COPY ~Pyroheretic/SPL/PYR325.SPL~  ~override~
+	SAY NAME1 @325
+	SAY UNIDENTIFIED_DESC @3250
+COPY ~Pyroheretic/SPL/PYR418.SPL~  ~override~
+	SAY NAME1 @418
+	SAY UNIDENTIFIED_DESC @4180
+COPY ~Pyroheretic/SPL/PYR450.SPL~  ~override~
+	SAY NAME1 @450
+	SAY UNIDENTIFIED_DESC @4500
+COPY ~Pyroheretic/SPL/PYR503.SPL~  ~override~
+	SAY NAME1 @503
+	SAY UNIDENTIFIED_DESC @5030
+COPY ~Pyroheretic/SPL/PYR523d.SPL~  ~override~
+COPY ~Pyroheretic/SPL/PYR523.SPL~  ~override~
+	SAY NAME1 @523
+	SAY UNIDENTIFIED_DESC @5230
+COPY ~Pyroheretic/SPL/PYR605.SPL~  ~override~
+	SAY NAME1 @605
+	SAY UNIDENTIFIED_DESC @6050
+COPY ~Pyroheretic/SPL/PYR609.SPL~  ~override~
+	SAY NAME1 @609
+	SAY UNIDENTIFIED_DESC @6090
+COPY ~Pyroheretic/SPL/PYR705.SPL~  ~override~
+	SAY NAME1 @705
+	SAY UNIDENTIFIED_DESC @7050
+COPY ~Pyroheretic/SPL/PYR712.SPL~  ~override~
+	SAY NAME1 @712
+	SAY UNIDENTIFIED_DESC @7120
+COPY ~Pyroheretic/SPL/PYR8728.SPL~  ~override~
+	SAY NAME1 @8728
+	SAY UNIDENTIFIED_DESC @87280
+COPY ~Pyroheretic/SPL/PYR8730.SPL~  ~override~
+	SAY NAME1 @8730
+	SAY UNIDENTIFIED_DESC @87300
+COPY ~Pyroheretic/SPL/PYR903.SPL~  ~override~
+	SAY NAME1 @903
+	SAY UNIDENTIFIED_DESC @9030
+COPY ~Pyroheretic/SPL/PYR922.SPL~  ~override~
+	SAY NAME1 @922
+	SAY UNIDENTIFIED_DESC @9220
+COPY ~Pyroheretic/SPL/PYRSUM.SPL~  ~override~
+	SAY NAME1 @1001
+	SAY UNIDENTIFIED_DESC @10010
+COPY ~Pyroheretic/SPL/PYRANTI.SPL~  ~override~
+	SAY NAME1 @1002
+	SAY UNIDENTIFIED_DESC @10020
+COPY ~Pyroheretic/SPL/PYRSTF.SPL~  ~override~
+	SAY NAME1 @1003
+	SAY UNIDENTIFIED_DESC @10030

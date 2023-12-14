@@ -1,0 +1,312 @@
+@0="Pyroheretic"
+@1="Pyroheretic"
+@2="Pyroheretic:
+
+Pyroheretics are sorcerers mastering all forms of fire magic. They dare to break arcane principles to gain power to breach most of the magic defences with their castings. As a price, they lost the ability of learning other types of spells.
+
+
+Advantages:
+- Hit dice: d6
+- May cast one more spell per day compared to ordinary sorcerers.
+- Obtain new spells causing fire damage bypass magic resistance.
+- No pause between casting spells.
+- Spell casting speed factor reduces 1 at level 13 and 25.
+- Restore a spell slot per 10 rounds when that spell level is first learned. The restoration time is then decreased by 1 round every time a higher level spell first becomes accessible.
+- New high level skills.
+- May use ability Pyrobreach to decrease a target's fire resistance by 15% once per day, and gain once more use per day and lower extra 15% fire resistance per six levels.
+
+Disadvantages:
+- May not learn spells and high-level skills of ordinary sorcerer.
+- May not use any scrolls of Enchantment spells
+– Alignment restricted to any non-lawful."
+
+@21="Pyrobreach"
+
+
+@103="Heretic Burning Hands"
+@1030="Heretic Burning Hands
+(Alteration)
+
+Level: 1
+Range: 0
+Duration: Instant
+Casting Time: 1
+Area of Effect: 5-ft. cone with 120-deg. arc
+Saving Throw: 1/2
+
+When the wizard casts this spell, a jet of searing flame shoots from <PRO_HISHER> fingertips. The wizard's hands must be held so as to send forth a fanlike sheet of flames: <PRO_HISHER> thumbs must touch each other and the fingers must be spread. The burning hands send out flame jets of 5 ft. length in a horizontal arc of about 120 degrees in front of the wizard. Any creature in the area of the flames suffers 1d3 points of damage, +2 points for each level of the caster, to a maximum of 1d3+20 points of fire damage. Those successfully saving vs. Spell receive half damage."
+
+
+@112="Fire Missile"
+@1120="Fire Missile
+(Any School)
+
+Level: 1
+Range: Visual range of the caster
+Duration: Instant
+Casting Time: 1
+Area of Effect: 1 creature
+Saving Throw: None 
+
+Use of the Fire Missile spell creates up to five missiles of Fire energy that dart forth from the wizard's fingertip and unerringly strike their target, which must be a creature of some sort. Each missile inflicts 1d4+1 points of damage. For every 2 extra levels of experience, the wizard gains an additional missile—<PRO_HESHE> has 2 at 3rd level, 3 at 5th level, 4 at 7th level, up to a total of 5 at 9th level."
+
+@206="Pyroblade"
+@2060="Pyroblade
+(Any School)
+
+Level: 2
+Sphere: Elemental (Fire) 
+Range: 0 
+Duration: 4 rounds + 1 round/2 levels 
+Casting Time: 4 
+Area of Effect: Special
+Saving Throw: None 
+
+With this spell, the caster causes a blazing ray of red-hot fire to spring forth from <PRO_HISHER> hand. This blade-like ray is wielded as if it were a sword that the caster already knows how to use, hence there are no bonuses or penalties. If the caster successfully hits with the flame blade in melee combat, the creature struck suffers 1d4 points of slashing damage, plus an additional 1d2+4 points of fire damage. However, it is not a magical weapon in the normal sense of the term, so creatures struck only by magical weapons are not harmed by it."
+
+@217="Heretic Spitfire"
+@2170="Heretic Spitfire
+(Any School)
+
+Level: 2
+Range: 15 ft.
+Duration: 1 round
+Casting Time: 3
+Area of Effect: 2-ft. by 15-ft. jet
+Saving Throw: None
+
+Upon casting this spell, a jet of flame appears at the caster's fingertips and bursts out toward one target of the caster's choice. That target will be hit by this flame for 3d6 points of damage. The flame jet strikes a second time halfway through its duration, and the caster may move while the spell is in effect. There is no Saving Throw against this spell, though anti-fire capabilities such as Fire Resistance will apply and may reduce or eliminate the damage."
+
+@303="Pyroarrow"
+@3030="Pyroarrow
+(Any School)
+
+Level: 3
+Range: 60 ft.
+Duration: 1 round
+Casting Time: 3
+Area of Effect: 1 creature
+Saving Throw: 1/2
+
+This spell enables the caster to hurl fiery bolts at opponents within range. Each bolt inflicts 1d6 points of piercing damage plus 4d6 points of fire damage. Only half of the fire damage is inflicted if the creature struck saves vs. Spell. The caster receives one bolt every 5 levels beyond the 5th (2 bolts at 10th level, 3 at 15th level, etc.). All of the bolts will streak toward the target of the spell."
+
+@304="Pyroball"
+@3040="Pyroball
+(Any School)
+
+Level: 3
+Range: 40 ft.
+Duration: Instant
+Casting Time: 3
+Area of Effect: 15-ft. radius
+Saving Throw: 1/2 
+
+A Pyroball is an explosive burst of flame, which detonates with a low roar and delivers damage proportional to the level of the wizard who cast it—1d6 points of damage for each level of experience of the caster (up to a maximum of 10d6). The wizard points <PRO_HISHER> finger and speaks the range (distance and height) at which the Fireball is to burst. A streak flashes from the pointing digit and, unless it impacts upon a material body or solid barrier prior to attaining the prescribed range, blossoms into the fireball (an early impact results in an early detonation). Creatures failing their Saving Throws each suffer full damage from the blast. Those who roll successful Saving Throws manage to dodge, fall flat, or roll aside, each receiving half."
+
+@325="Heretic Minute Meteors"
+@3250="Heretic Minute Meteors
+(Any School)
+
+Level: 3
+Range: 0
+Duration: Special
+Casting Time: 3
+Area of Effect: The caster
+Saving Throw: None
+
+This spell creates several small globes of fire, one for each experience level the wizard has obtained, which are held in the wizard's hands in place of <PRO_HISHER> usual weapons. The meteors can be hurled at targets up to 270 feet away and are treated as missiles with a +5 bonus to the attack rolls. Each meteor bursts into a 1-ft. diameter sphere upon impact, inflicting 1d4+3 points of damage plus an additional 3 points of fire damage to any creature struck. The wizard may hurl up to five missiles per round."
+
+@418="Pyroshield"
+@4180="Pyroshield
+(Any School)
+
+Level: 4
+Range: 0
+Duration: 10 rounds
+Casting Time: 1
+Area of Effect: The caster
+Saving Throw: None
+
+The Pyroshield protects the user with a surrounding shield of flame, which grant the user 15% + 20% / 5 levels of resistance to fire and all forms of physical damages up to a maximum of 95% at level 21. In addition, an opponent that hits the caster with any weapons or spells within a 5-ft. radius suffers 1d8+2 points of fire damage."
+
+@450="Heretic Spirit Fire"
+@4500="Heretic Spirit Fire
+(Any School)
+
+Level: 4
+Sphere: Summoning
+Range: 40 ft. 
+Duration: Instant 
+Casting Time: 4
+Area of Effect: 15-ft. radius 
+Saving Throw: Special
+
+As this spell casted, energies gather together from the spirit world and form a pale blue sphere. The caster can throw the sphere so that it explodes into a burst of ghostly, azure flames, which deliver 1d4 points of magic damage per level of the caster (up to a maximum of 10d4). There is also a 33% chance that every enemy within the area of effect will be afflicted by the Doom spell (-2 penalty to Saving Throws and attack rolls for 1 turn). A successful Save vs. Spell halves the damage and negates the Doom effect. Spirits, fey creatures, elementals, and spectral undead take double damage."
+
+@503="Heretic Flame Strike"
+@5030="Heretic Flame Strike
+(Any School)
+
+Level: 5
+Sphere: Combat
+Range: 40 ft.
+Duration: Instant
+Casting Time: 3
+Area of Effect: 1 creature
+Saving Throw: 1/2 
+
+When the priest calls down a Flame Strike spell, a vertical column of fire roars downward in the exact location called for by the caster. The target must roll a Saving Throw vs. Spell. Failure means the creature sustains 1d8 points of damage per level of the caster; otherwise, the damage is halved."
+
+
+@523="Nova"
+@5230="Nova
+(Any School)
+
+Level: 5
+Range: 0
+Duration: Instant
+Casting Time: 3
+Area of Effect: 15-ft. radius
+Saving Throw: 1/2
+
+A Nova is like a Fireball—an explosive burst of flame, which detonates with a low roar and delivers damage proportional to the level of the caster: 1d6 points of damage per level of the caster, up to a maximum of 15d6. The wizard gestures with <PRO_HISHER> hand, and the entire area around <PRO_HIMHER> erupts in flames, striking everyone except the caster <PRO_HIMHER>self. Creatures failing their Saving Throws take full damage from the blast; those who roll successful Saving Throws manage to dodge, fall flat, or roll aside, each taking half damage."
+
+@605="Conjure Fire Elemental"
+@6050="Conjure Fire Elemental
+(Any School)
+
+Level: 6
+Sphere: Elemental (Fire), Summoning
+Range: Visual range of the caster
+Duration: 1 turn/level
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None
+
+Upon casting a Conjure Fire Elemental spell, the caster opens a special gate to the Elemental Plane of Fire, and a fire elemental is summoned in the vicinity of the caster. There is a 60% chance that a 12-Hit-Dice elemental appears; a 35% chance that a 16-Hit-Dice elemental appears; and a 5% chance that a 24-Hit-Dice elemental appears. The elemental will do the bidding of the caster until it is slain or the duration of the spell runs out. All the commands given to the elemental are done telepathically, so there is no time lost due to miscommunication and no need to know the language of the summoned creature. Unlike Mages, a Pyroheretic does not have to engage in a battle of the minds to control their elemental."
+
+@609="Heretic Dawn"
+@6090="Heretic Dawn
+(Any School)
+
+Level: 6
+Sphere: Sun
+Range: 0
+Duration: Instant
+Casting Time: 3
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+Heretic Dawn calls into existence a bright reddish light, as if a sunrise were occurring, within the area of effect. All undead creatures within a Heretic Dawn suffer 6d6 fire and 6d6 magic damage. There is no Saving Throw. Affected undead also act confused on the round after the Heretic Dawn appears."
+
+@705="Pyrostorm"
+@7050="Pyrostorm
+(Any School)
+
+Level: 7
+Sphere: Elemental (Fire)
+Range: 120 ft.
+Duration: 4 rounds
+Casting Time: 5
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+When a Pyrostorm spell is cast, the whole area is shot through with sheets of roaring flame and then pelted with fiery balls of lava. Creatures within the area of effect receive 2d8 points of damage plus 1 per level of the caster (i.e. 2d8 + 1/level). This assault will last for 4 rounds and will continue to do damage to the creature during that time unless <PRO_HESHE> moves out of the area of effect. There is no Saving Throw."
+
+@712="Delayed Blast Pyroball"
+@7120="Delayed Blast Pyroball
+(Any School)
+
+Level: 7
+Range: 40 ft.
+Duration: Special
+Casting Time: 5
+Area of Effect: 11-ft. radius
+Saving Throw: 1/2
+
+This spell creates a Fireball that hovers at a point determined by the caster. The Fireball will stay in position until someone walks too close to it; at that point, it will explode, dealing 15d6 points of damage. Victims are allowed a Saving Throw vs. Spell for half damage."
+
+@8728="Pyro Implosion"
+@87280="Pyro Implosion
+(Any School)
+
+Level: 8
+Range: 40 ft.
+Duration: 2 rounds
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: Special
+
+This spell creates a rift in the earth beneath the target which implodes and closes in upon itself, crushing and burning the target and holding it for 1 round. The spell does 10d10 fire damage and 10d10 blunt damage. The victim can save vs. Spell for half."
+
+@8730="Pyroaura"
+@87300="Pyroaura
+(Any School)
+
+Level: 8
+Range: 0
+Duration: 10 rounds
+Casting Time: 4
+Area of Effect: The caster
+Saving Throw: None
+
+This spell causes the caster to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the user 100% Fire Resistance and an AC bonus of 4, but also protects <PRO_HIMHER> from attacks made within a 5-ft. radius. An opponent that hits the caster with any weapons or spells within this radius suffers 2d10+2 fire damage. In addition, the intense heat protects the caster from all weapons of +2 or lower enchantment"
+
+@903="Pyrostrike"
+@9030="Pyrostrike
+(Any School)
+
+Level: 9
+Range: 80 ft.
+Duration: Instant
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: None 
+
+When this spell is cast at a target creature, it will dispel all of the magical protections that surround that creature. This includes Minor Spell Turning, Minor Globe of Invulnerability, Spell Immunity, Globe Of Invulnerability, Minor Spell Deflection, Spell Turning, Spell Shield, Spell Deflection, and Spell Trap. The target's Magic Resistance, if any, does not affect this spell."
+
+
+@922="Pyrodraco's Breath"
+@9220="Pyrodraco's Breath
+(Any School)
+
+Level: 10
+Range: 320 ft.
+Duration: Instant
+Casting Time: 3
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+This spell causes a disembodied head of a red dragon to appear and breathe fire with the strength of an adult red dragon. In addition to the enormous 20d10 fireball, the force of the dragon's breath knocks an opponent off their feet and away from the caster. The victim can save vs. Breath Weapon to take half damage and not be blown backwards. The spell damage level is set to be 0 so it breaches all creatures spell level protections.
+
+This spell will not harm party members."
+
+@1001="Archomental Summoning"
+@10010="Archomental Summoning
+
+Level: 10
+Range: 30 ft.
+Duration: 2 turn
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+Through Pyroheretic's special link with the Elemental Plane of Fire, this spell summons an avatar of Zaaman Rul, the Prince of Good Fire Creatures. The avatar will stay for 2 turns and will follow the instruction of the Pyroheretic as long as they remain summoned."
+
+@1002="Antimatter Comet"
+@10020="Antimatter Comet
+
+Level: 10
+Range: 270 ft.
+Duration: Instant
+Casting Time: 3
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+The Pyroheretic summons a huge meteor or comet composed of antimatter strikes the earth, damaging all enemies in its path and sending out a powerful shockwave that knocks away all foes in the area of effect. Those knocked down must save vs. Paralysis or be stunned for 3 rounds. The comet itself does 10d10 fire damage and 10d10 magic damage penetrating magic resistance with no save."
+
+
+@1003="Starfire"
+@10030="This ability grants the Pyroheretic 30% enhancement to all <PRO_HISHER> fire damages. The ability can be learned at most three times."
+
+

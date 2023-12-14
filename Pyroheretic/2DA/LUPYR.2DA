@@ -1,0 +1,13 @@
+2DA V1.0
+*
+        ABILITY       ICON        STRREF    MIN_LEV   MAX_LEVEL  NUM_ALLOWED  PREREQUISITE EXCLUDED_BY   ALIGNMENT_RESTRICT
+1       AP_PYRSTF      *          *         1         99         3            *            *             *
+2       GA_PYRRM       *          *         1         99         16           *            *             *
+3       GA_PYR406      *          *         1         99         1            *            *             *
+4       GA_PYR602      *          *         1         99         1            GA_PYR406    *             *
+5       GA_PYR510      *          *         1         99         1            *            *             *
+6       GA_PYR519      *          *         1         99         1            *            *             *
+7       GA_PYR606      *          *         1         99         1            *            *             *
+8       GA_PYR920      *          *         1         99         1            *            *             *
+9       GA_PYRANTI     *          *         1         99         1            *            *             *
+       
