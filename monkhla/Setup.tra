@@ -1,0 +1,79 @@
+@0="New Monk HLA (modified from Oversight by Kish)"
+
+
+@3="Battle Stance"
+@4="Battle Stance
+The experienced monk purifies <PRO_HISHER> fundamental skills after thousands of fights. Three permanent abilities are granted to the monk: first, <PRO_HISHER> spellcasting time is decreased by 1; second, <PRO_HESHE> will never critical miss <PRO_HISHER> attacks; third, every <PRE_HISHER> successful hit conveys a cumulative -1 penalty on critical hit chance to the target for 2 rounds."
+
+@5="Shadowless Kick"
+@6="Shadowless Kick
+This kick throws the target back, knocks the target unconscious, and deals 4d8 points of damage.
+Requires: Battle Stance."
+
+@7="Tiger Strike"
+@8="Tiger Strike
+A more powerful form of Shadowless Kick, this power ensures every blow for the next round is a critical hit.  In addition, every blow for the next two rounds throws the target back and knocks the target unconscious.
+Prerequisite: Shadowless Kick."
+
+@9="Dragon Fist"
+@10="Dragon Fist
+By channeling ki energy, the monk becomes briefly able to interact physically with the essence of magic.  With a blow, the monk strips away magical protections from the target.  This automatically dispels Armor, Shield, Resist Fear, Ghost Armor, Protection from Cold, Protection from Fire, Protection from Normal Missiles, Fire Shield, Spirit Armor, Stoneskin, Protection from Acid, Protection from Electricity, Protection from Normal Weapons, Protection from Magic Energy, Protection from Magical Weapons, Mantle, Protection from the Elements, Improved Mantle, Protection from Energy, and Absolute Immunity, as well as priestly and natural versions of the same spells."
+
+@11="Faster Than The Eye"
+@12="Faster Than The Eye
+By concentrating briefly on another area within 4000 feet, the monk can instantly transport <PRO_HIMHER>self there."
+
+@13="Flip Resistances"
+@14="Flip Resistances
+The monk gains the ability to switch between its natural form and the other more physical-focus battle form. When transforming to the new battle form, the monk converts <PRO_HISHER> magic resistance into physical damage resistance and becomes immune to backstab as well."
+
+@15="Solar Stance"
+@16="Solar Stance
+Solar Stance renders nearby enemies more vulnerable, reducing the saving throws of any within 60 feet of the monk by 4. It creates a cloud of glittering golden particles that fill the air for twenty feet around the monk, revealing invisible creatures.  All enemies in the cloud must roll a successful saving throw vs. spell or be blinded (-4 to attack rolls, saving throws, and Armor Class) until the dust fades, after 4 rounds.  Also, a blast of fire emanates from the monk, scorching and throwing back everyone in a 30 foot radius, though the stance protects the monk from the flames.
+Prerequisite: Tiger Strike."
+
+@17="Lunar Stance"
+@18="Lunar Stance
+A monk who strikes this stance gains a +5 bonus to Saving Throws vs. Death, a +2 bonus to luck, and becomes immune to Slay, Imprisonment, Petrification, Level Drain, Disintegrate, and Time Stop.  The duration of this power is four rounds.
+Prerequisite: Solar Stance."
+
+@19="Shadow Stance"
+@20="Shadow Stance
+This stance causes the monk to instantly become both invisible, as per the spell Improved Invisibility, and immune to divination spells such as True Seeing.  This power lasts for 23 rounds.
+Prerequisite: Lunar Stance."
+
+@21="Feet of the Wind"
+@22="Feet of the Wind
+The monk's movement rate greatly and permanently increases by 10. This ability can only be learned once."
+
+@23="Second Wind"
+@24="Second Wind
+By concentrating briefly, the monk can shrug off even the worst of wounds, once per day. The effect of this power is to fully heal the monk instantly.
+Prerequisite: Dimond Body."
+
+@25="Dimond Body"
+@26="Dimond Body
+The monk's all physical resistances permanently increase by 5%. This ability can only be learned three times"
+
+
+@51="Natural Form"
+
+@53=~Flurry of Blows~
+
+@55=~Fist~
+@56=~Fist +4~
+
+
+@101="Brocade Cassock"
+@102="This robe was originally a sacred garment bestowed upon Xuanzang, a monk of the Great Tang, when he made a vow to journey to the Western Heaven to obtain sacred scriptures. Avalokiteshvara Bodhisattva, moved by his determination, gifted him this protective robe. After Xuanzang successfully completed his pilgrimage and returned to the Great Tang, the Bodhisattva reclaimed the robe. However, shortly thereafter, a great war erupted in the Heavenly Court, and the robe's whereabouts became unknown.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 5
+– Strength: +1
+- Wisdom: +1
+- Charisma: +1
+– User becomes immune to Backstab and Level Drain
+
+Weight: 35"

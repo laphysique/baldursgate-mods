@@ -1,0 +1,26 @@
+2DA V1.0
+*
+        ABILITY       ICON        STRREF    MIN_LEV   MAX_LEVEL  NUM_ALLOWED  PREREQUISITE EXCLUDED_BY   ALIGNMENT_RESTRICT
+1       AP_MO!BAT      *          *         1         99         1            *            *             *
+2       GA_KISH1       *          *         1         99         16           AP_MO!BAT    *             *
+3       GA_KISH2       *          *         1         99         16           GA_KISH1     *             *
+4       GA_KISH6       *          *         1         99         16           GA_KISH2     *             *
+5       GA_KISH7       *          *         1         99         16           GA_KISH6     *             *
+6       GA_KISH8       *          *         1         99         16           GA_KISH7     *             *
+8       GA_KISH3       *          *         1         99         16           *            *             *
+9       AP_KISH9       *          *         1         99         1            *            *             *
+10      GA_KISH4       *          *         1         99         16           AP_KISH9     *             *
+11      AP_MO!PHY      *          *         1         99         3            *            *             *
+12      GA_KISH12      *          *         1         99         3            AP_MO!PHY    *             *
+13         *           *          *         *         *          *            *            *             *
+14         *           *          *         *         *          *            *            *             *
+15         *           *          *         *         *          *            *            *             *
+16         *           *          *         *         *          *            *            *             *
+17         *           *          *         *         *          *            *            *             *
+18         *           *          *         *         *          *            *            *             *
+19         *           *          *         *         *          *            *            *             *
+20         *           *          *         *         *          *            *            *             *
+21         *           *          *         *         *          *            *            *             *
+22         *           *          *         *         *          *            *            *             *
+23         *           *          *         *         *          *            *            *             *
+24         *           *          *         *         *          *            *            *             *

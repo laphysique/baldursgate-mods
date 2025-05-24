@@ -1,0 +1,84 @@
+BACKUP ~monkhla/backup~                                 // Backup directory
+AUTHOR ~caseypie1004@gmail.com~                         // Author's e-mail address
+LANGUAGE ~English~ ~eng~ ~monkhla/Setup.tra~  // English
+
+BEGIN @0
+
+COPY ~monkhla/bam~ ~override~
+COPY ~monkhla/2da/monkfist.2da~ ~override~
+COPY ~monkhla/2da/lumo0.2da~ ~override/lumo0.2da~
+COPY ~monkhla/2da/lumo0.2da~ ~override/lumo1.2da~
+COPY ~monkhla/2da/lumo0.2da~ ~override/lumo2.2da~
+
+COPY ~monkhla/itm/mfist3.itm~ ~override~
+	SAY NAME1 @55
+COPY ~monkhla/itm/mfist7.itm~ ~override~
+	SAY NAME1 @56
+COPY ~monkhla/itm/mfist8.itm~ ~override~
+	SAY NAME1 @56
+COPY ~monkhla/itm/MO!ROBE.itm~ ~override~
+	SAY NAME2 @101
+	SAY DESC  @102
+
+COPY ~monkhla/spl/MO!ROBE.spl~ ~override~
+COPY ~monkhla/spl/MO!BAT.eff~ ~override~
+COPY ~monkhla/spl/MO!BAT.spl~ ~override~
+	SAY NAME1 @3
+	SAY UNIDENTIFIED_DESC @4
+COPY ~monkhla/spl/kish1.spl~ ~override~
+	SAY NAME1 @5
+	SAY UNIDENTIFIED_DESC @6
+COPY ~monkhla/spl/kish2.spl~ ~override~
+	SAY NAME1 @7
+	SAY UNIDENTIFIED_DESC @8
+COPY ~monkhla/spl/kish3.spl~ ~override~
+	SAY NAME1 @9
+	SAY UNIDENTIFIED_DESC @10
+COPY ~monkhla/spl/kish4.spl~ ~override~
+	SAY NAME1 @11
+	SAY UNIDENTIFIED_DESC @12
+COPY ~monkhla/spl/MO!RES1.spl~ ~override~
+	SAY NAME1 @13
+	SAY UNIDENTIFIED_DESC @14
+COPY ~monkhla/spl/MO!RES2.spl~ ~override~
+	SAY NAME1 @51
+COPY ~monkhla/spl/kish6.spl~ ~override~
+	SAY NAME1 @15
+	SAY UNIDENTIFIED_DESC @16
+COPY ~monkhla/spl/kish7.spl~ ~override~
+	SAY NAME1 @17
+	SAY UNIDENTIFIED_DESC @18
+COPY ~monkhla/spl/kish8.spl~ ~override~
+	SAY NAME1 @19
+	SAY UNIDENTIFIED_DESC @20
+COPY ~monkhla/spl/kish9.spl~ ~override~
+	SAY NAME1 @21
+	SAY UNIDENTIFIED_DESC @22
+COPY ~monkhla/spl/kish12.spl~ ~override~
+	SAY NAME1 @23
+	SAY UNIDENTIFIED_DESC @24
+COPY ~monkhla/spl/MO!PHY.SPL~ ~override~
+	SAY NAME1 @25
+	SAY UNIDENTIFIED_DESC @26
+
+// Add Flurry of Blows to every monk class
+COPY ~monkhla/spl/monkfb.spl~ ~override~
+	SAY NAME1 @53
+
+APPEND ~clabmo01.2da~ ~ABILITY50  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       GA_MO!RES1 ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  AP_MO!ROBE ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ~
+
+
+APPEND ~clabmo02.2da~ ~ABILITY50  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       GA_MO!RES1 ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  AP_MO!ROBE ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ~
+
+APPEND ~clabmo03.2da~ ~ABILITY50  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       GA_MO!RES1 ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  AP_MO!ROBE ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ****       GA_MONKFB  ****       ****       ~
+
+
+// MFIST APR
+COPY ~monkhla/spl/mo!apr1.spl~ ~override~ 
+COPY ~monkhla/spl/mo!apr2.spl~ ~override~ 
+COPY ~monkhla/spl/mo!dk.spl~ ~override~ 
+LPF ADD_SPELL_EFFECT INT_VAR opcode=321 target=2 STR_VAR resource=~MO!APR1~ END
+LPF ADD_SPELL_EFFECT INT_VAR opcode=321 target=2 STR_VAR resource=~MO!APR2~ END
+
+EXTEND_BOTTOM ~baldur.bcs~ ~monkhla/MFISTS.baf~
+EXTEND_BOTTOM ~baldur25.bcs~ ~monkhla/MFISTS.baf~

@@ -42,7 +42,7 @@ SAY @78002
 LAF fl#add_kit_ee
     STR_VAR
         kit_name = GRNADER
-	thiefscl = ~100 0 0 0 0 0 0 0~
+	thiefscl = ~50 0 0 0 0 0 0 0~
     END
 
 //2DA & EFF

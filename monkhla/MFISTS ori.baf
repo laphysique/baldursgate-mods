@@ -1,0 +1,37 @@
+IF
+    Class(Player1,MONK)
+    HasItemEquiped(Player1,"MFIST7") 
+THEN
+    RESPONSE #100
+    ReallyForceSpellRES("MO!DK",Player1)
+    ReallyForceSpellRES("MO!APR1",Player1)
+    SetGlobal("MO_1","GLOBAL",1)
+END
+IF
+    Class(Player1,MONK)
+    Global("MO_1","GLOBAL",1)
+    !HasItemEquiped(Player1,"MFIST7") 
+THEN
+    RESPONSE #100
+    ReallyForceSpellRES("MO!DK",Player1)
+    SetGlobal("MO_1","GLOBAL",0)
+END
+
+IF
+    Class(Player1,MONK)
+    HasItemEquiped(Player1,"MFIST8") 
+THEN
+    RESPONSE #100
+    ReallyForceSpellRES("MO!DK",Player1)
+    ReallyForceSpellRES("MO!APR2",Player1)
+    SetGlobal("MO_1","GLOBAL",1)
+END
+IF
+    Class(Player1,MONK)
+    Global("MO_1","GLOBAL",1)
+    !HasItemEquiped(Player1,"MFIST8") 
+THEN
+    RESPONSE #100
+    ReallyForceSpellRES("MO!DK",Player1)
+    SetGlobal("MO_1","GLOBAL",0)
+END
